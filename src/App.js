@@ -53,11 +53,19 @@ function App() {
           <h1>Specialty Chooser</h1>
           <p>{questions[currentQuestionIndex].question}</p>
           <div className="answers">
-            {shuffledAnswers.map((answer, index) => (
-              <button key={index} onClick={() => handleAnswer(answer)}>
-                {answer}
-              </button>
-            ))}
+            
+              {shuffledAnswers.map((answer, index) => (
+                <div className="box" key={index}>
+                  <span className="title">{answer}</span>
+                  <div className="scrollbox">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                  <button className="" onClick={() => handleAnswer(answer)}>
+                    button
+                  </button>
+                </div>
+              ))}
+            
           </div>
         </div>
       )}
