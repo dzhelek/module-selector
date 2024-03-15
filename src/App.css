@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  margin-top: 50px;
 }
 body {
   background-image: url('../public/bg-image.jpg');
@@ -50,19 +49,37 @@ button:active {
   transition: 100ms;
 }
 
-h1 {
-  font-size: 2em;
+#header{
+  position: relative;
+  margin-bottom: 50px;
+  font-size: xx-large;
+  color: whitesmoke;
+  background-color: #1D3461;
 }
+
+h1, h2 {
+  margin: 0%;
+}
+
 
 p {
   font-size: 1.2em;
   margin-bottom: 20px;
 }
 
+#main {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 50S%;
+  padding: 0% 10%;
+}
+
 .answers {
-  display:flex;
+  display: flex;
   color: white;
-  position: fixed;
+  text-align: center;
+  justify-content: center;
 }
 
 .answers::before {
@@ -74,10 +91,7 @@ p {
 }
 
 .answers .box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 11.875em;
+  width: 12.875em;
   height: 15.875em;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.074);
@@ -89,10 +103,9 @@ p {
 }
 
 .answers .box {
-  display: inline-block;
-  width: 35%;
+  width: 45%;
   height: 40vh;
-  margin: 100px 75px;
+  margin: 0 5%;
 }
 
 .answers .box .title {
