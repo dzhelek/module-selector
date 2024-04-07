@@ -27,12 +27,12 @@ const Results = ({ score }) => {
 
        {/* Additional table for information about each answer */}
       <h2>{
-      score.SpecialityA > score.SpecialityB
-      ? "Софтуерни приложения с повишена сигурност"
-      : score.SpecialityA < score.SpecialityB
-      ? "Комуникационна и мрежова сигурност"
-      : "трудно е да се прецени"
-        } </h2>
+        score.SpecialityA > score.SpecialityB
+        ? "Софтуерни приложения с повишена сигурност"
+        : score.SpecialityA < score.SpecialityB
+        ? "Комуникационна и мрежова сигурност"
+        : "трудно е да се прецени"
+      }</h2>
       <table>
         <thead>
           <tr>
